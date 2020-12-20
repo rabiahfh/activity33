@@ -1,0 +1,65 @@
+1<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+
+<title>Title</title>
+</head>
+<body>
+<script>
+//  bonus
+var score = 0;
+var heroes = [ 
+{ q: "Are you rabiahs TA", a: "Yes"}
+,{ q: "are you the TA of the year", a: "Yes"}
+
+]
+
+for (var i = 0; i < heroes.length; i++) {
+    //   console.log(heroes[i].q);
+      var askUserQuestion = confirm(heroes[i].q);
+      console.log(askUserQuestion)
+
+
+      if (askUserQuestion) {
+        alert("yes you are");
+      //  bonus
+        score++
+        console.log (score)
+      }
+      else {
+        alert("no your not but your still awesome");
+        
+      }
+
+
+}
+
+
+
+
+</script>
+
+</body>
+</html>
+
+<!-- ### File
+
+* _None_
+
+### Instructions
+
+* Starting from a blank HTML file, create an array with 10 question objects. Each object in the array should be structured as follows: 
+
+  `{ q: "QUESTION", a: "ANSWER" }`
+
+* Then create code that will ask the user questions, one by one. The user must answer by hitting OK (for true) or Cancel (for false).
+
+* Check the user's answer against the correct answer, and provide them with an alert telling them if they are right or wrong.
+
+* **BONUS:** Keep track of the user's score. -->
